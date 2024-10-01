@@ -17,4 +17,7 @@ COPY . .
 
 USER bun
 EXPOSE 3001
-CMD ["bun", "start"]
+# CMD ["bun", "start"]
+
+# bunx prisma generate && bun start
+CMD ["bunx", "prisma", "generate", "&&", "bun", "start"]
